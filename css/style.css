@@ -1,0 +1,281 @@
+/*=======================
+ページ全体の共通クラス
+=========================*/
+
+body {
+  color: #082b48;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  overscroll-behavior: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #082b48;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.container {
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+}
+
+.clear::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*=======================
+header
+=========================*/
+
+.header-left {
+  float: left;
+}
+
+.header-left-title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-right-nav-item {
+  float: left;
+  padding: 8px 15px;
+}
+
+/*=======================
+top
+=========================*/
+
+.top {
+  background-image: url(../img/main-vsual-nontitle.png);
+  background-size: cover;
+}
+
+.top-maintitle {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 30px;
+}
+
+.top-subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*=======================
+section共通クラス
+=========================*/
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*=======================
+about
+=========================*/
+
+.about-left {
+  float: left;
+  width: 47%;
+}
+
+.about-right {
+  float: right;
+  width: 47%;
+}
+
+/*=======================
+courses
+=========================*/
+
+.courses {
+  background-color: rgba(53, 224, 104, 0.307);
+}
+
+.courses-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.courses-flex-item {
+  width: 32%;
+}
+
+/*=======================
+contact
+=========================*/
+
+.contact p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="email"] {
+  display: block;
+  /* width: 600px; */
+  width: auto;
+  padding: 12px;
+  border: 2px solid #999;
+  border-radius: 99px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.btn {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 auto;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #082b48;
+  border: none;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btn-submit {
+  padding: 20px 120px;
+  background-color: orange;
+}
+
+/*=======================
+footer
+=========================*/
+
+footer {
+  background-color: #082b48;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer p {
+  float: right;
+}
+
+/*=======================
+スマホ用
+=========================*/
+
+@media screen and (max-width: 960px) {
+  /*=======================
+  ページ全体の共通クラス
+  =========================*/
+  .clear::after {
+    content: none;
+  }
+
+  /*=======================
+  header
+  =========================*/
+  .header-left {
+    float: none;
+    text-align: center;
+  }
+
+  .header-right {
+    float: none;
+  }
+
+  .header-right-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-right-nav-item {
+    float: none;
+    font-size: 12px;
+  }
+
+  /*=======================
+  top
+  =========================*/
+
+  .top-maintitle {
+    font-size: 24px;
+  }
+
+  .top-subtitle {
+    font-size: 12px;
+  }
+
+  /*=======================
+  section共通クラス
+  =========================*/
+  section {
+    padding: 80px 0;
+  }
+
+  /*=======================
+  about
+  =========================*/
+
+  .about-left {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-right {
+    float: none;
+    width: 100%;
+  }
+
+  /*=======================
+  courses
+  =========================*/
+  .courses-flex {
+    display: block;
+    justify-content: space-between;
+  }
+
+  .courses-flex-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /*=======================
+  contact
+  =========================*/
+
+  input[type="email"] {
+    width: auto;
+  }
+
+  /*=======================
+  footer
+  =========================*/
+
+  footer p {
+    float: none;
+    text-align: center;
+    font-size: 12px;
+  }
+}
