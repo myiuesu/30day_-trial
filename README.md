@@ -1,1 +1,1 @@
-# 30day_-trial
+# 30day-trial
